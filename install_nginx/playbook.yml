@@ -1,0 +1,13 @@
+---
+- name: "Nginx installation"
+  hosts: all
+  vars:
+    nginx_port: 2000
+  become: yes
+  roles:
+    - role: "install_nginx"
+  tasks:
+    - name: "Debug"
+      debug:
+        msg : "{{ nginx_port }}"
+

@@ -1,0 +1,4 @@
+---
+# vars file for install_nginx
+
+nginx_port: 3000
